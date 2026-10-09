@@ -1,56 +1,253 @@
-# **Search Algorithms Repository**
+# 🔍 Search Algorithms Collection
 
+<p align="center">
+  <img src="https://cdn.pixabay.com/animation/2022/08/06/11/57/11-57-26-645_512.gif" alt="Search Algorithms Banner" width="480">
+</p>
 
-<table style="border-collapse: collapse; border: nonenone!important;">
-  <tr>
-    <td style="border: none; width: 40%;">
-      <p>This repository contains implementations of various search algorithms in different programming languages. The algorithms are designed to solve different types of search problems efficiently. Each algorithm is implemented in multiple languages, including <strong>Python3, Java, C++, C#, R, Swift, JavaScript, and Rust</strong>, to make it easy for developers to understand and use them in their projects.</p>
-    </td>
-    <td style="border: none; width: 60%;">
-      <img src="https://cdn.pixabay.com/animation/2022/08/06/11/57/11-57-26-645_512.gif" alt="Search" style="max-width: 100%;">
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <b>Koleksi lengkap implementasi algoritma pencarian (Search Algorithms) dalam berbagai bahasa pemrograman populer.</b>
+</p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Language-Python%20%7C%20C%2B%2B%20%7C%20Java%20%7C%20JS%20%7C%20C%23%20%7C%20Rust%20%7C%20Swift%20%7C%20R-blue.svg" alt="Languages">
+  <img src="https://img.shields.io/badge/License-Apache%202.0-green.svg" alt="License">
+  <img src="https://img.shields.io/badge/Maintained%3F-Yes-brightgreen.svg" alt="Maintained">
+</p>
 
+---
 
-## Algorithms
+## 📌 Daftar Isi (Table of Contents)
+- [Tentang Repositori](#-tentang-repositori)
+- [Struktur Folder & Navigasi](#-struktur-folder--navigasi)
+- [Tabel Ringkasan Algoritma & Kompleksitas](#-tabel-ringkasan-algoritma--kompleksitas)
+- [Penjelasan Detail Masing-Masing Algoritma](#-penjelasan-detail-masing-masing-algoritma)
+  - [1. Linear Search](#1-linear-search)
+  - [2. Binary Search](#2-binary-search)
+  - [3. Breadth-First Search (BFS)](#3-breadth-first-search-bfs)
+  - [4. Depth-First Search (DFS)](#4-depth-first-search-dfs)
+  - [5. Dijkstra's Algorithm](#5-dijkstras-algorithm)
+  - [6. Uniform Cost Search (UCS)](#6-uniform-cost-search-ucs)
+  - [7. A* (A-Star) Search](#7-a-a-star-search)
+  - [8. Iterative Deepening DFS (IDDFS)](#8-iterative-deepening-dfs-iddfs)
+- [Cara Menjalankan Kode (Quick Start)](#-cara-menjalankan-kode-quick-start)
+  - [Menjalankan Semua Algoritma Sekaligus (Python Demo)](#menjalankan-semua-algoritma-sekaligus-python-demo)
+  - [Menjalankan Algoritma Spesifik per Bahasa](#menjalankan-algoritma-spesifik-per-bahasa)
+- [Bahasa Pemrograman yang Didukung](#-bahasa-pemrograman-yang-didukung)
+- [Kontribusi](#-kontribusi)
+- [Lisensi](#-lisensi)
 
-| Algorithm                         | Description                                                                                                           | Big O     |
-|-----------------------------------|-----------------------------------------------------------------------------------------------------------------------|-----------|
-| **Linear Search**                     | A simple search algorithm that sequentially checks each element in a list until a match is found.                      | O(n)      |
-| **Binary Search**                     | An efficient algorithm that divides a sorted list into two halves and narrows down the search range by comparing values.| O(log n)  |
-| **Depth-First Search (DFS)**           | A graph traversal algorithm that explores as far as possible along each branch before backtracking.                    | O(V + E)  |
-| **Breadth-First Search (BFS)**         | Another graph traversal algorithm that explores all vertices at the same depth level before moving to the next level.  | O(V + E)  |
-| **A Search**                         | An informed search algorithm that uses heuristics to efficiently search for a path between nodes in a graph.           | O(b^d)    |
-| **Uniform-Cost Search (UCS)**          | A graph search algorithm that explores the least-cost path by assigning a cost to each edge.                           | O((V + E) log V) |
-| **Dijkstra's Algorithm**              | A popular algorithm for finding the shortest path between nodes in a graph with non-negative edge weights.             | O((V + E) log V) |
-| **Iterative Deepening DFS (IDDFS)**    | A combination of depth-first search and breadth-first search that gradually increases the depth limit until the goal is found. | O(b^d) |
+---
 
-<!-- | **Bidirectional Search**              | An algorithm that runs two simultaneous searches, one forward and one backward, until they meet.                      | O(b^(d/2)) |
-| **Jump Search**                       | A search algorithm that works on sorted arrays by making fixed steps and performing linear search in the bounded range. | O(sqrt(n)) |
-| **Interpolation Search**              | A search algorithm that uses numerical estimates to find an appropriate position to search in a sorted array.           | O(log log n) |
-| **Exponential Search**                | An algorithm that exponentially increases the search range until a range containing the target element is found.        | O(log n)  |
-| **Red-Black Tree**                    | A self-balancing binary search tree that maintains balance during insertions and deletions.                            | O(log n)  |
-| **Trie (Prefix Tree)**                | A tree-based data structure used for efficient searching and prefix-based operations.                                  | O(m)      |
-| **Hashing**                           | A technique that maps data elements to a fixed-size array using a hash function.                                       | O(1)      |
-| **Simulated Annealing**               | A probabilistic search algorithm inspired by annealing in metallurgy.                                                  | Depends on the problem |
-| **Genetic Algorithms**                | Search algorithms inspired by the process of natural selection.                                                         | Depends on the problem |
-| **Ant Colony Optimization**           | An optimization algorithm that models the behavior of ant colonies in nature.                                          | Depends on the problem |
-| **Particle Swarm Optimization**       | An optimization algorithm inspired by the collective behavior of swarms.                                               | Depends on the problem |
-| **Tabu Search**                       | A metaheuristic search algorithm that uses memory structures to escape local optima and explore the search space more effectively. | Depends on the problem |
- -->
+## 📖 Tentang Repositori
 
-## Usage
+Repositori ini memuat implementasi standar dari algoritma pencarian fundamental, mulai dari pencarian array sederhana (*Linear & Binary Search*), penelusuran graf unweighted (*BFS & DFS*), hingga pencarian jalur terpendek dan berbobot (*Dijkstra, UCS, A\*, dan IDDFS*).
 
-Each algorithm is implemented in multiple programming languages within the repository. To use a specific algorithm, navigate to the corresponding directory in the repository and select the language of your choice. Each implementation comes with a detailed explanation and usage instructions in its respective README file.
+Setiap algoritma disediakan dalam **8 bahasa pemrograman** berbeda:
+- 🐍 **Python** (`.py`)
+- ☕ **Java** (`.java`)
+- ⚡ **C++** (`.cpp`)
+- 🔷 **C#** (`.cs`)
+- 🌐 **JavaScript** (`.js`)
+- 🦀 **Rust** (`.rs`)
+- 🍏 **Swift** (`.swift`)
+- 📊 **R** (`.r`)
 
-## Contribution
+---
 
-Contributions to the repository are welcome! If you have an algorithm implemented in a programming language that is not currently included or you would like to improve an existing implementation, feel free to open a pull request.
+## 📂 Struktur Folder & Navigasi
 
-Please ensure that your code follows the repository's coding guidelines and includes appropriate documentation and test cases.
+Setiap folder algoritma dirancang seragam, berisi dokumentasi penjelasan (`.md`) serta file implementasi kode sumber untuk masing-masing bahasa:
 
-## License
+```text
+search-algorithms/
+│
+├── A Search/                               # Algoritma A* (Informed Search)
+│   ├── a_search_algorithm.md
+│   ├── a_search_python.py
+│   ├── a_search_c++.cpp
+│   ├── a_search_java.java
+│   └── ... (C#, JS, Rust, Swift, R)
+│
+├── Binary_Search/                          # Algoritma Binary Search (Sorted Array)
+│   ├── binary_search_algorithm.md
+│   ├── binary_search_python.py
+│   ├── binary_search_c++.cpp
+│   └── ...
+│
+├── Breadth_First_Search/                   # Algoritma Breadth-First Search (Level-by-level)
+│   ├── breadth_first_search_algorithm.md
+│   ├── breadth_first_search_python.py
+│   └── ...
+│
+├── Depth_First_Search/                     # Algoritma Depth-First Search (Branch-by-branch)
+│   ├── depth_first_search_algorithm.md
+│   ├── depth_first_search_python.py
+│   └── ...
+│
+├── Dijkstra's_Algorithm/                   # Algoritma Dijkstra (Shortest Path)
+│   ├── dijkstra's_algorithm.md
+│   ├── dijkstra's_algorithm_python.py
+│   └── ...
+│
+├── Iterative Deepening DFS Algorithm/      # Algoritma IDDFS (DFS berbatas kedalaman)
+│   ├── iddfs_algorithm.md
+│   ├── iddfs_algorithm_python.py
+│   └── ...
+│
+├── Linear_Search/                          # Algoritma Linear Search (Sequential)
+│   ├── linear_search_algorithm.md
+│   ├── linear_search_python.py
+│   └── ...
+│
+├── Uniform_Cost_Search/                    # Algoritma UCS (Lowest Path Cost)
+│   ├── uniform_cost_search_algorithm.md
+│   ├── uniform_cost_search_python.py
+│   └── ...
+│
+├── run_all.py                              # 🔥 Script demo interaktif (Run all algorithms)
+├── README.md                               # Dokumentasi utama repositori
+└── LICENSE                                 # Lisensi Apache 2.0
+```
 
-The search algorithms in this repository are available under the [Apache 2.0 License](LICENSE). Feel free to use and modify the code.
+---
+
+## 📊 Tabel Ringkasan Algoritma & Kompleksitas
+
+| Algoritma | Tipe Struktur Data | Kompleksitas Waktu (Worst) | Kompleksitas Ruang | Karakteristik Utama |
+| :--- | :--- | :--- | :--- | :--- |
+| **Linear Search** | Array / List | $O(n)$ | $O(1)$ | Sederhana, tidak butuh data terurut |
+| **Binary Search** | Sorted Array | $O(\log n)$ | $O(1)$ | Sangat cepat, **wajib** data terurut |
+| **BFS** | Graph / Tree | $O(V + E)$ | $O(V)$ | Menggunakan Queue, mencari rute langkah minimum |
+| **DFS** | Graph / Tree | $O(V + E)$ | $O(V)$ | Menggunakan Stack / Rekursi, eksplorasi mendalam |
+| **Dijkstra** | Weighted Graph | $O((V + E) \log V)$ | $O(V)$ | Menggunakan Priority Queue, jarak terpendek ke semua titik |
+| **UCS** | Weighted Graph | $O((V + E) \log V)$ | $O(V)$ | Varian Dijkstra berorientasi tujuan (*Goal Node*) |
+| **A\* Search** | Weighted + Heuristic | $O(b^d)$ | $O(b^d)$ | Menggunakan fungsi evaluasi $f(n) = g(n) + h(n)$ |
+| **IDDFS** | Graph / Tree | $O(b^d)$ | $O(bd)$ | Menggabungkan kelebihan kelengkapan BFS & hemat memori DFS |
+
+> *Keterangan:*  
+> - $n$ = jumlah elemen dalam list  
+> - $V$ = jumlah vertex/node, $E$ = jumlah edge/garis  
+> - $b$ = faktor percabangan (*branching factor*), $d$ = kedalaman solusi (*depth of goal*)
+
+---
+
+## 🧠 Penjelasan Detail Masing-Masing Algoritma
+
+### 1. Linear Search
+* **Prinsip Kerja**: Memeriksa elemen array satu per satu mulai dari indeks ke-0 sampai elemen yang dicari ditemukan atau seluruh array telah diperiksa.
+* **Kapan Digunakan**:
+  - Ukuran array kecil.
+  - Data tidak berurutan dan proses sorting terlebih dahulu dinilai terlalu memakan waktu.
+
+### 2. Binary Search
+* **Prinsip Kerja**: Menggunakan teknik *Divide and Conquer*. Menghitung indeks tengah (`mid`). Jika target lebih kecil dari nilai tengah, pencarian dibatasi ke paruh kiri; jika lebih besar, dibatasi ke paruh kanan.
+* **Syarat Mutlak**: Data **harus sudah terurut (sorted)** secara ascending atau descending.
+
+### 3. Breadth-First Search (BFS)
+* **Prinsip Kerja**: Menelusuri graf lapis demi lapis (*level-order*). Semua tetangga terdekat dari node awal dikunjungi terlebih dahulu sebelum melanjutkan ke tetangga berikutnya.
+* **Struktur Data Pendukung**: **Queue (FIFO - First In First Out)**.
+* **Keunggulan**: Menjamin menemukan jalur dengan jumlah transisi (hop) paling sedikit pada graf tanpa bobot.
+
+### 4. Depth-First Search (DFS)
+* **Prinsip Kerja**: Menelusuri satu cabang hingga titik terdalam (mentok) sebelum melakukan *backtracking* ke cabang lainnya.
+* **Struktur Data Pendukung**: **Stack (LIFO - Last In First Out)** atau tumpukan panggilan fungsi rekursif (*call stack*).
+* **Keunggulan**: Menggunakan memori yang relatif lebih kecil dibanding BFS pada struktur pohon yang lebar.
+
+### 5. Dijkstra's Algorithm
+* **Prinsip Kerja**: Menemukan jalur terpendek dari satu titik awal (*single-source shortest path*) ke semua simpul lain pada graf dengan bobot non-negatif.
+* **Struktur Data Pendukung**: **Min-Heap / Priority Queue**.
+* **Keunggulan**: Menghasilkan jarak absolut terpendek secara optimal matematis.
+
+### 6. Uniform Cost Search (UCS)
+* **Prinsip Kerja**: Mirip dengan Dijkstra, tetapi berfokus pada pencarian jalur dari simpul *Start* ke simpul *Goal* dengan total biaya kumulatif terendah (*cheapest path cost*).
+
+### 7. A* (A-Star) Search
+* **Prinsip Kerja**: Algoritma pencarian berinformasi (*informed search*) yang mempercepat penemuan jalur dengan memanfaatkan fungsi evaluasi:
+  $$\mathbf{f(n) = g(n) + h(n)}$$
+  - $g(n)$: Biaya nyata dari titik awal ke simpul $n$.
+  - $h(n)$: Estimasi heuristik dari simpul $n$ menuju titik tujuan (misal: jarak garis lurus Euclidean atau Manhattan).
+
+### 8. Iterative Deepening DFS (IDDFS)
+* **Prinsip Kerja**: Menjalankan DFS berulang kali dengan batas kedalaman (*depth limit*) yang dinaikkan secara bertahap ($0, 1, 2, \dots$) hingga tujuan ditemukan.
+* **Keunggulan**: Memiliki kelengkapan (*completeness*) dan optimalitas seperti BFS, namun dengan efisiensi memori setara DFS ($O(bd)$).
+
+---
+
+## 🚀 Cara Menjalankan Kode (Quick Start)
+
+### Menjalankan Semua Algoritma Sekaligus (Python Demo)
+Untuk mencoba dan melihat output langsung dari implementasi algoritma (Linear Search, Binary Search, BFS, DFS, Dijkstra, dan UCS), gunakan script demonstrasi yang telah disediakan:
+
+```bash
+python run_all.py
+```
+
+Output terminal akan menampilkan proses pencarian, status indeks, urutan traversal graf, dan penghitungan jalur terpendek secara rapi.
+
+---
+
+### Menjalankan Algoritma Spesifik per Bahasa
+
+Kamu dapat menjalankan file individual sesuai bahasa yang terpasang di komputermu:
+
+#### 🐍 Python
+```bash
+python "Binary_Search/binary_search_python.py"
+python "Breadth_First_Search/breadth_first_search_python.py"
+```
+
+#### 🌐 Node.js (JavaScript)
+```bash
+node "Binary_Search/binary_search_javascript.js"
+node "Dijkstra's_Algorithm/dijkstra's_algorithm_javascript.js"
+```
+
+#### ⚡ C++
+```bash
+g++ "Binary_Search/binary_search_c++.cpp" -o binary_search
+./binary_search
+```
+
+#### ☕ Java
+```bash
+javac "Binary_Search/binary_search_java.java"
+java -cp "Binary_Search" binary_search_java
+```
+
+#### 🦀 Rust
+```bash
+rustc "Binary_Search/binary_search_rust.rs" -o binary_search_rust
+./binary_search_rust
+```
+
+---
+
+## 🌐 Bahasa Pemrograman yang Didukung
+
+| Algoritma | Python | C++ | Java | JS | C# | Rust | Swift | R |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Linear Search** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **Binary Search** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **Breadth First Search (BFS)** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **Depth First Search (DFS)** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **Dijkstra's Algorithm** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **Uniform Cost Search (UCS)** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **A\* Search** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **Iterative Deepening DFS (IDDFS)** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+
+---
+
+## 🤝 Kontribusi
+
+Kontribusi dan perbaikan sangat terbuka!
+1. Fork repositori ini.
+2. Buat branch fitur baru (`git checkout -b feature/NamaFitur`).
+3. Commit perubahan Anda (`git commit -m 'Menambahkan fitur baru'`).
+4. Push ke branch (`git push origin feature/NamaFitur`).
+5. Buat **Pull Request**.
+
+---
+
+## 📄 Lisensi
+
+Proyek ini dilisensikan di bawah **Apache License 2.0**. Silakan lihat berkas [LICENSE](LICENSE) untuk informasi lebih lanjut.
