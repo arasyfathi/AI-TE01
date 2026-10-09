@@ -1,18 +1,18 @@
-# 🤖 Tugas Mata Kuliah Kecerdasan Buatan (AI-TE01)
+﻿# 🤖 Tugas Mata Kuliah Kecerdasan Buatan (AI-TE01)
 
 <p align="center">
-  <img src="https://cdn.pixabay.com/animation/2022/08/06/11/57/11-57-26-645_512.gif" alt="Search Algorithms" width="460">
+  <img src="https://cdn.pixabay.com/animation/2022/08/06/11/57/11-57-26-645_512.gif" alt="AI Project Banner" width="460">
 </p>
 
 <p align="center">
-  <b>Implementasi & Analisis Algoritma Pencarian (Search Algorithms)</b><br>
+  <b>Koleksi Tugas & Implementasi Kecerdasan Buatan (Artificial Intelligence)</b><br>
   Program Studi S1 Teknik Elektro — Universitas Telkom
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Mata%20Kuliah-Kecerdasan%20Buatan-blue.svg" alt="Course">
   <img src="https://img.shields.io/badge/Kelas-AI--TE01-orange.svg" alt="Class">
-  <img src="https://img.shields.io/badge/Bahasa-Python%20%7C%20C%2B%2B%20%7C%20Java%20%7C%20JS-brightgreen.svg" alt="Language">
+  <img src="https://img.shields.io/badge/Bahasa-C%2B%2B%20%7C%20Python%20%7C%20Java-brightgreen.svg" alt="Language">
 </p>
 
 ---
@@ -23,17 +23,24 @@
 * **Program Studi**  : S1 Teknik Elektro
 * **Mata Kuliah**    : Kecerdasan Buatan (Artificial Intelligence)
 * **Kode Kelas**     : AI-TE01
-* **Topik Tugas**    : Search Algorithms & Graph Traversal (Linear, Binary, BFS, DFS, Dijkstra, UCS, A*, IDDFS)
 
 ---
 
-## 📌 Deskripsi Tugas
+## 📌 Isi Repositori Tugas
 
-Repositori ini dibuat untuk memenuhi tugas mata kuliah **Kecerdasan Buatan (AI)**. Repositori ini berisi implementasi berbagai algoritma pencarian fundamental dalam ilmu komputer dan kecerdasan buatan, yang terbagi dalam dua kategori utama:
-1. **Uninformed Search (Blind Search)**: Linear Search, Binary Search, Breadth-First Search (BFS), Depth-First Search (DFS), Uniform Cost Search (UCS), dan Iterative Deepening DFS (IDDFS).
-2. **Informed Search (Heuristic Search)**: A* Search dan Dijkstra's Algorithm (pencarian jalur terpendek berbobot).
+Repositori ini mencakup 2 topik utama mata kuliah Kecerdasan Buatan:
 
-Seluruh kode dan algoritma tersimpan rapi di dalam direktori **[`Search_Algorithm/`](Search_Algorithm/)**.
+### 1. 🔍 Search Algorithms (`Search_Algorithm/`)
+Implementasi lengkap 8 algoritma pencarian klasik:
+* **Uninformed Search**: Linear Search, Binary Search, BFS, DFS, UCS, dan IDDFS.
+* **Informed Search**: A* Search dan Dijkstra's Algorithm.
+* **Bahasa**: Python, C++, Java, JavaScript, Rust, C#, Swift, R.
+
+### 2. 🩺 Sistem Pakar Diagnosis Penyakit Jantung (`Expert-System-Implementation-main/`)
+Sistem pakar medis (*Medical Expert System*) interaktif berbasis bahasa C++ untuk mendiagnosis penyakit kardiovaskular dan merekomendasikan terapi pengobatan:
+* **Backward Chaining**: Menentukan diagnosis penyakit jantung berdasarkan inferensi gejala klinis pasien (Rule base).
+* **Forward Chaining**: Menentukan rekomendasi terapi obat & tindakan medis berdasarkan hasil diagnosis yang terkonfirmasi.
+* **Bahasa**: C++ (Standalone Native Executable).
 
 ---
 
@@ -42,75 +49,62 @@ Seluruh kode dan algoritma tersimpan rapi di dalam direktori **[`Search_Algorith
 ```text
 AI-TE01/
 │
-├── Search_Algorithm/                       # Direktori utama implementasi algoritma
-│   ├── A Search/                           # Informed Search: Algoritma A* (Heuristik)
-│   ├── Binary_Search/                      # Uninformed Search: Binary Search
-│   ├── Breadth_First_Search/               # Uninformed Search: BFS (Level-order)
-│   ├── Depth_First_Search/                 # Uninformed Search: DFS (Depth-order)
-│   ├── Dijkstra's_Algorithm/               # Shortest Path: Dijkstra
-│   ├── Iterative Deepening DFS Algorithm/  # Uninformed Search: IDDFS
-│   ├── Linear_Search/                      # Uninformed Search: Linear Search
-│   ├── Uniform_Cost_Search/                # Uninformed Search: UCS (Cheapest Path)
-│   │
-│   ├── run_all.py                          # 🔥 Script demonstrasi eksekusi seluruh algoritma
-│   └── README.md                           # Dokumentasi teknis mendalam
+├── Search_Algorithm/                       # Proyek 1: Algoritma Pencarian
+│   ├── A Search/                           # A* Search
+│   ├── Binary_Search/                      # Binary Search
+│   ├── Breadth_First_Search/               # Breadth-First Search (BFS)
+│   ├── Depth_First_Search/                 # Depth-First Search (DFS)
+│   ├── Dijkstra's_Algorithm/               # Dijkstra's Algorithm
+│   ├── Iterative Deepening DFS Algorithm/  # IDDFS
+│   ├── Linear_Search/                      # Linear Search
+│   ├── Uniform_Cost_Search/                # Uniform Cost Search (UCS)
+│   ├── run_all.py                          # Demo runner seluruh algoritma
+│   └── README.md                           # Panduan teknis Search Algorithms
 │
-└── README.md                               # Laporan & dokumentasi utama repositori tugas
+├── Expert-System-Implementation-main/      # Proyek 2: Sistem Pakar (Expert System)
+│   ├── Project1-SubmittedFiles/
+│   │   ├── Project1-A05071238.cpp          # Kode utama program (Main driver)
+│   │   ├── knowledge_base-...h             # Basis pengetahuan gejala & diagnosis
+│   │   ├── rules-...h                      # Aturan inferensi (Backward Chaining)
+│   │   ├── forward_knowledge_base-...h     # Basis pengetahuan terapi & obat
+│   │   ├── forward_rules-...h              # Aturan rekomendasi (Forward Chaining)
+│   │   ├── expert_system.exe               # File binary mandiri (Standalone executable)
+│   │   └── Project-1-A05071238-Bigyan.pdf  # Laporan & dokumentasi proyek
+│   └── README.md
+│
+└── README.md                               # Laporan & dokumentasi utama repositori
 ```
 
 ---
 
-## 📊 Matriks Analisis & Kompleksitas Algoritma
+## 🚀 Panduan Menjalankan Program (How to Run)
 
-| No | Algoritma | Kategori | Time Complexity (Worst) | Space Complexity | Struktur Data |
-| :-: | :--- | :--- | :---: | :---: | :--- |
-| 1 | **Linear Search** | Array Search | $O(n)$ | $O(1)$ | Array / List |
-| 2 | **Binary Search** | Divide & Conquer | $O(\log n)$ | $O(1)$ | Sorted Array |
-| 3 | **Breadth-First Search (BFS)** | Uninformed Graph | $O(V + E)$ | $O(V)$ | Queue (FIFO) |
-| 4 | **Depth-First Search (DFS)** | Uninformed Graph | $O(V + E)$ | $O(V)$ | Stack (LIFO) / Rekursif |
-| 5 | **Dijkstra's Algorithm** | Shortest Path | $O((V + E) \log V)$ | $O(V)$ | Priority Queue (Min-Heap) |
-| 6 | **Uniform Cost Search (UCS)** | Uninformed Graph | $O((V + E) \log V)$ | $O(V)$ | Priority Queue (Min-Heap) |
-| 7 | **A\* Search** | Informed Heuristic | $O(b^d)$ | $O(b^d)$ | Priority Queue ($f = g + h$) |
-| 8 | **IDDFS** | Depth-bounded | $O(b^d)$ | $O(bd)$ | Stack / Recursive Call |
+### A. Menjalankan Sistem Pakar (Expert System)
+Masuk ke direktori file sistem pakar dan jalankan program eksekusinya:
+
+```bash
+cd Expert-System-Implementation-main/Project1-SubmittedFiles
+./expert_system.exe
+```
+
+*(Atau kompilasi ulang menggunakan compiler C++):*
+```bash
+g++ -std=c++17 -static Project1-A05071238.cpp -o expert_system.exe
+./expert_system.exe
+```
+
+Program akan memandu proses diagnosis secara interaktif dalam Bahasa Indonesia dengan pertanyaan `Y` (Ya) atau `T` (Tidak).
 
 ---
 
-## 🚀 Cara Menjalankan Program (Execution Guide)
-
-### 1. Menjalankan Seluruh Algoritma Sekaligus (Demo Interaktif)
-Pastikan Python 3 sudah terpasang, lalu jalankan script `run_all.py` dari root proyek:
+### B. Menjalankan Algoritma Pencarian (Search Algorithms)
+Jalankan script demo python dari root:
 
 ```bash
 python Search_Algorithm/run_all.py
 ```
 
-*Atau masuk terlebih dahulu ke folder `Search_Algorithm`:*
-```bash
-cd Search_Algorithm
-python run_all.py
-```
-
-Script ini akan otomatis menguji dan menampilkan hasil eksekusi dari:
-- **Linear Search**: Pencarian target pada list acak
-- **Binary Search**: Pencarian target pada list terurut
-- **BFS & DFS**: Urutan traversal simpul graf
-- **Dijkstra**: Perhitungan bobot jarak terpendek dari simpul awal ke semua simpul
-- **UCS**: Pencarian jalur dengan total biaya terkecil menuju node tujuan
-
----
-
-### 2. Menjalankan Algoritma Individual
-Untuk menguji algoritma spesifik per folder:
-
-```bash
-# Contoh Binary Search (Python)
-python "Search_Algorithm/Binary_Search/binary_search_python.py"
-
-# Contoh BFS (Python)
-python "Search_Algorithm/Breadth_First_Search/breadth_first_search_python.py"
-```
-
 ---
 
 ## 📄 Lisensi
-Proyek tugas ini disusun untuk keperluan akademik dan dilisensikan di bawah [Apache License 2.0](Search_Algorithm/LICENSE).
+Seluruh kode pada repositori ini disusun untuk keperluan akademik perkuliahan di bawah lisensi [Apache License 2.0](Search_Algorithm/LICENSE).
