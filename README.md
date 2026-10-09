@@ -61,50 +61,18 @@ Setiap folder algoritma dirancang seragam, berisi dokumentasi penjelasan (`.md`)
 ```text
 search-algorithms/
 │
-├── A Search/                               # Algoritma A* (Informed Search)
-│   ├── a_search_algorithm.md
-│   ├── a_search_python.py
-│   ├── a_search_c++.cpp
-│   ├── a_search_java.java
-│   └── ... (C#, JS, Rust, Swift, R)
+├── Search_Algorithm/                       # Direktori utama algoritma pencarian
+│   ├── A Search/                           # Algoritma A* (Informed Search)
+│   ├── Binary_Search/                      # Algoritma Binary Search (Sorted Array)
+│   ├── Breadth_First_Search/               # Algoritma BFS (Level-by-level)
+│   ├── Depth_First_Search/                 # Algoritma DFS (Branch-by-branch)
+│   ├── Dijkstra's_Algorithm/               # Algoritma Dijkstra (Shortest Path)
+│   ├── Iterative Deepening DFS Algorithm/  # Algoritma IDDFS (DFS berbatas kedalaman)
+│   ├── Linear_Search/                      # Algoritma Linear Search (Sequential)
+│   ├── Uniform_Cost_Search/                # Algoritma UCS (Lowest Path Cost)
+│   └── run_all.py                          # 🔥 Script demo interaktif (Run all algorithms)
 │
-├── Binary_Search/                          # Algoritma Binary Search (Sorted Array)
-│   ├── binary_search_algorithm.md
-│   ├── binary_search_python.py
-│   ├── binary_search_c++.cpp
-│   └── ...
-│
-├── Breadth_First_Search/                   # Algoritma Breadth-First Search (Level-by-level)
-│   ├── breadth_first_search_algorithm.md
-│   ├── breadth_first_search_python.py
-│   └── ...
-│
-├── Depth_First_Search/                     # Algoritma Depth-First Search (Branch-by-branch)
-│   ├── depth_first_search_algorithm.md
-│   ├── depth_first_search_python.py
-│   └── ...
-│
-├── Dijkstra's_Algorithm/                   # Algoritma Dijkstra (Shortest Path)
-│   ├── dijkstra's_algorithm.md
-│   ├── dijkstra's_algorithm_python.py
-│   └── ...
-│
-├── Iterative Deepening DFS Algorithm/      # Algoritma IDDFS (DFS berbatas kedalaman)
-│   ├── iddfs_algorithm.md
-│   ├── iddfs_algorithm_python.py
-│   └── ...
-│
-├── Linear_Search/                          # Algoritma Linear Search (Sequential)
-│   ├── linear_search_algorithm.md
-│   ├── linear_search_python.py
-│   └── ...
-│
-├── Uniform_Cost_Search/                    # Algoritma UCS (Lowest Path Cost)
-│   ├── uniform_cost_search_algorithm.md
-│   ├── uniform_cost_search_python.py
-│   └── ...
-│
-├── run_all.py                              # 🔥 Script demo interaktif (Run all algorithms)
+├── run_all.py                              # 🔥 Script demo interaktif (Root runner)
 ├── README.md                               # Dokumentasi utama repositori
 └── LICENSE                                 # Lisensi Apache 2.0
 ```
