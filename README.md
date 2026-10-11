@@ -46,7 +46,7 @@
 | **Program Studi** | S1 Teknik Elektro |
 | **Institusi** | Universitas Telkom |
 | **Mata Kuliah** | Kecerdasan Buatan (*Artificial Intelligence*) |
-| **Kode KelOMPOK** | **AI-TE01** |
+| **Kode Kelompok** | **AI-TE01** |
 | **Cakupan Tugas** | 1. Implementasi & Komparasi *Search Algorithms*<br>2. Pengembangan *Rule-Based Medical Expert System* |
 
 ---
