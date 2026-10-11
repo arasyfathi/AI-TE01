@@ -42,7 +42,7 @@
 
 | Data | Keterangan |
 | :--- | :--- |
-| **Nama Mahasiswa** | **FATIH DZUMALIN RAHIM SULASTOMO**, **Fathi Arasy**, **MUHAMAD JIDAN FIRZANA** |
+| **Nama Mahasiswa** | **FATIH DZUMALIN RAHIM SULASTOMO**, **FATHI ARASY**, **MUHAMAD JIDAN FIRZANA** |
 | **Program Studi** | S1 Teknik Elektro |
 | **Institusi** | Universitas Telkom |
 | **Mata Kuliah** | Kecerdasan Buatan (*Artificial Intelligence*) |
