@@ -48,7 +48,7 @@ public:
         std::cout << "\n=======================================================================\n";
         std::cout << "  Terima kasih telah menggunakan Sistem Pakar Diagnosis Jantung!\n";
         std::cout << "=======================================================================\n\n";
-        exit(0);
+        system("pause"); exit(0);
     }
     
 public:
